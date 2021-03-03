@@ -1,0 +1,509 @@
+/*
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+### Accent
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    Font-size:15px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/***Styling Desktop Header***/
+
+header{
+ width: 100%;
+ background-color: #1c2431;
+ display: inline-block;
+ height: 80px;
+}
+
+header .container{
+    width: 85%;
+    max-width: 1400px;
+}
+
+header .container img{
+    width: 100px;
+    line-height: 80px;
+    position: relative;
+    top: 25px;
+}
+
+header nav ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header nav ul li{
+    padding: 0 8px;
+}
+
+header nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/***Styling First Section***/
+section.get_started{
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-color: #1c2431;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 150px;
+}
+
+.get_started img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.get_started h2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.get_started p{
+    font-size: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.get_started input[type=submit]{
+    width:40%;
+    max-width: 400px;
+    height: 60px;
+    border-radius:1.5em;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    background:linear-gradient(90deg, hsl(176, 68%, 64%) -50%, hsl(198, 60%, 50%) 100%);
+    font-weight:700;
+    font-size:20px;
+}
+
+.get_started input[type=submit]:hover{
+    background: hsl(176, 68%, 64%);
+}
+
+/***Styling Features Section***/
+section.features{
+    background-color: hsl(218, 28%, 13%)
+}
+
+section.features .container{
+    max-width: 800px;
+}
+
+.feature-item{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-item h2{
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0;
+}
+
+/***Styling Production Section***/
+section.production{
+    margin-top: 100px;
+}
+
+section.production .container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.production .align-text{
+    float: left;
+    max-width: 40%;
+    margin: 0px 0px 0px 50px;
+}
+
+section.production .container img{
+    float: left;
+    width: 50%;
+}
+
+section.production .align-text h2{
+    margin-top: 17%;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    font-size: 24px;
+}
+
+section.production .align-text p{
+    margin:20px 0px;
+}
+
+.align-text a{
+    color: aquamarine;
+}
+
+.align-text a:hover{
+    color: white;
+}
+
+/***Styling Testemonials Section***/
+
+section.testemonials .quote{
+    background-image: url('../images/bg-quotes.png');
+    background-repeat:no-repeat;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 25px;
+    left: -10px;
+}
+
+section.testemonials .container{
+    max-width: 1400px;
+}
+
+section.testemonials .card-1{
+    background-color:hsl(219, 30%, 18%);
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 0 10px;
+}
+
+section.testemonials .card-1:nth-child(1){
+    margin-top: 30px;
+    text-align: left;
+}
+
+.card-1 .card-align img{
+    width:32px;
+    height:32px;
+    border-radius: 16px;
+    float:left;
+    margin-top: 8px;
+}
+
+.card-1 .card-align p{
+    font-style: italic;
+    margin-left: 40px;
+}
+
+.card-1 .card-align:nth-child(2){
+    margin-top: 20px;
+}
+
+/* Section new_letter */
+
+section.new_letter{
+    background-color:hsl(217, 28%, 15%);
+    width: 40%;
+    padding: 20px;
+    margin:0px auto;
+    position: relative;
+    top: 170px;
+    border-radius: 30px;
+}
+
+.new_letter  form{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+
+.new_letter  form h2{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.new_letter  form p{
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 0 2%;
+}
+
+.new_letter .button_wrapper{
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.new_letter form input[type=email]{
+    width: 60%;
+    height:50px;
+    line-height:50px;
+    background:white;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.new_letter form input[type=submit]{
+    width: 30%;
+    height:50px;
+    line-height:50px;
+    background:linear-gradient(90deg, hsl(176, 68%, 64%) -50%, hsl(198, 60%, 50%) 100%);
+    border: none;
+    border-radius: 20px; 
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    background-color: hsl(216, 53%, 9%);
+    height: 500px;
+    padding-top: 200px;
+    margin:0 auto;
+}
+
+footer .adr{
+    width: 70%;
+    float:left;
+}
+
+footer .adr p{
+    float: left;
+    width: 60%;
+    padding: 5px 5%;
+}
+
+footer .nav_adr{
+    width: 10%;
+    float:left;
+}
+
+.nav_adr nav ul{
+    list-style-type: none;
+}
+
+.nav_adr nav ul li{
+    margin-top: 5px;
+}
+
+.nav_adr nav ul li a{
+    text-decoration: none;
+}
+
+.socials{
+    float:right;
+}
+
+@media screen and (max-width:1000px){
+    section.new_letter{
+        width: 70%; 
+    }
+}
+
+@media screen and (max-width:768px){
+    /***Styling Production Section***/
+    section.production{
+        margin-top: 100px;
+    }
+
+    section.production .container{
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1400px;
+    }
+
+    .production .align-text{
+        float: left;
+        max-width: 100%;
+        padding:0 2%;
+    }
+
+    section.production .container img{
+        float: none;
+        width: 100%;
+    }
+
+    section.production .align-text h2{
+        margin-top: 17%;
+        font-family: 'Raleway', sans-serif;
+        font-weight:700;
+        font-size: 24px;
+    }
+    /*FOOTER*/
+    footer .adr{
+        width: 100%;
+        float:none;
+    }
+    
+    footer .adr p{
+        float: none;
+        width: 70%;
+        padding: 5px 5%;
+    }
+
+    footer .adr address{
+        padding-top: 20px;
+    }
+    
+    footer .nav_adr{
+        width: 100%;
+        float:left;
+        margin: 30px 0;
+    }
+    
+    .nav_adr nav ul li{
+        margin-top: 8px;
+    }
+    
+    .socials{   
+        float:none;
+    }
+
+    footer{
+        height: 800px;
+    }
+
+    /***Styling Testemonials Section***/
+
+    section.testemonials .quote{
+        background-image: url('../images/bg-quotes.png');
+        background-repeat:no-repeat;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 40px;
+        left: 70px;
+    }
+
+    section.testemonials .container{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    section.testemonials .card-1{
+        background-color:hsl(219, 30%, 18%);
+        width: 80%;
+        padding: 10px;
+        padding: 50px;
+        border-radius: 5px;
+        float: none;
+        margin: 30px auto;
+    }
+    /***Styling Features Section***/
+    section.features .container{
+        max-width: 800px;
+        margin:0 auto;
+    }
+
+    .feature-item{
+        width: 80%;
+        float: none;
+        padding: 20px 5%;
+        margin: 0 auto;
+    }
+
+    .feature-item h2{
+        font-family: 'Raleway', sans-serif;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    section.new_letter{
+        width: 95%;
+        height: 350px;
+    }
+
+    .new_letter  form{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .new_letter  form h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    .new_letter  form p{
+        font-size: 16px;
+        margin-top: 5px;
+        padding: 0 2%;
+    }
+
+    .new_letter form input[type=email]{
+        width: 80%;
+        margin: 10px 0;
+    }
+    
+    .new_letter form input[type=submit]{
+        width: 80%;
+    }
+}
+
+
