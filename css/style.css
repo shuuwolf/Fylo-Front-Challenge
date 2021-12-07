@@ -108,7 +108,7 @@ header nav ul li a:hover{
 }
 
 /***Styling First Section***/
-section.get_started{
+.get_started{
     background-image: url('../images/bg-curvy-desktop.svg');
     background-color: #1c2431;
     background-position: bottom;
@@ -124,7 +124,7 @@ section.get_started{
     max-width: 500px;
 }
 
-.get_started h2{
+.get_started h1{
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
@@ -307,6 +307,11 @@ section.new_letter{
     border: none;
     border-radius: 20px;
     padding-left: 10px;
+    color: rgb(130, 130, 130);
+}
+
+.new_letter form input[type=email]::placeholder{
+    color: black;
 }
 
 .new_letter form input[type=submit]{
@@ -362,6 +367,13 @@ footer .nav_adr{
 
 .socials img{
     width:32px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+
 }
 
 @media screen and (max-width:1000px){
