@@ -360,6 +360,10 @@ footer .nav_adr{
     float:right;
 }
 
+.socials img{
+    width:32px;
+}
+
 @media screen and (max-width:1000px){
     section.new_letter{
         width: 70%; 
